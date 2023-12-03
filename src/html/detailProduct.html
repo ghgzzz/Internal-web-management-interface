@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modernize Free</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Home</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Profile</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./addUser.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user-plus"></i>
+                </span>
+                <span class="hide-menu">Add User</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./settingUser.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-settings"></i>
+                </span>
+                <span class="hide-menu">Setting</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./chat-page.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-message"></i>
+                </span>
+                <span class="hide-menu">Chat</span>
+              </a>
+            </li>
+            <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="./detailPost.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-article"></i>
+                </span>
+                <span class="hide-menu">Post</span>
+              </a>
+            </li> -->
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Product</span>
+            </li>
+            <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="./Product.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-archive"></i>
+                </span>
+                <span class="hide-menu">Product</span>
+              </a>
+            </li> -->
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./listProduct.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-align-box-left-bottom"></i>
+                </span>
+                <span class="hide-menu">List product</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./detailProduct.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-clipboard-data"></i>
+                </span>
+                <span class="hide-menu">Detail product</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Contact</span>
+            </li>
+            <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="./contact.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user"></i>
+                </span>
+                <span class="hide-menu">Contact</span>
+              </a>
+            </li> -->
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./listContact.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-address-book"></i>
+                </span>
+                <span class="hide-menu">List Contact</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">AUTH</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Login</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user-plus"></i>
+                </span>
+                <span class="hide-menu">Register</span>
+              </a>
+            </li>
+          </ul>
+          <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
+            <div class="d-flex">
+              <div class="unlimited-access-title me-3">
+                <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">Upgrade to pro</h6>
+                <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/" target="_blank"
+                  class="btn btn-primary fs-2 fw-semibold lh-sm">Buy Pro</a>
+              </div>
+              <div class="unlimited-access-img">
+                <img src="../assets/images/backgrounds/rocket.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item d-block d-xl-none">
+                        <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                            <i class="ti ti-menu-2"></i>
+                        </a>
+                    </li>
+                    <!-- notification  -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-icon-hoverd-flex align-items-center" href="javascript:void(0)" id="drop2"
+                            data-toggle="dropdown" aria-expanded="false" href="javascript:void(0)">
+                            <div class="notification bg-primary rounded-circle"></div>
+                            <i class="ti ti-bell-ringing"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up dropleft p-lg-4"
+                            aria-labelledby="drop2">
+                            <div class="message-body">
+                                <p class="fw-semibold">Notifications</p>
+                                <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                                    <img src="../assets/images/profile/user-2-8a001bcb.jpg" alt="" width="35" height="35"
+                                        class="rounded-circle " alt="Sender Image" class="sender-image">
+                                    <p class="mb-0 fs-3">Roman Joined the Team! Congratulate him</p>
+                                </a>
+                                <!-- ... other notification items ... -->
+                                <a href="javascript:void(0)" class="btn btn-outline-primary mx-3 mt-2 d-block">See all Notification</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- shopping -->
+                <ul class="navbar-nav">
+                    <li class="nav-item d-block d-xl-none">
+                        <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                            <i class="ti ti-menu-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                            <i class="ti ti-shopping-cart"></i>
+                            <div class="shopping-cart bg-primary rounded-circle"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+                    <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+                      <span class="nav-item username fw-bolder accordion-collapse">
+                        Gia Hung
+                    </span>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                                <div class="message-body">
+                                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                                        <i class="ti ti-user fs-6"></i>
+                                        <p class="mb-0 fs-3">My Profile</p>
+                                    </a>
+                                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                                        <i class="ti ti-mail fs-6"></i>
+                                        <p class="mb-0 fs-3">My Account</p>
+                                    </a>
+                                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                                        <i class="ti ti-list-check fs-6"></i>
+                                        <p class="mb-0 fs-3">My Task</p>
+                                    </a>
+                                    <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Additional content -->
+                        <li class="nav-item">
+                            <!-- Your additional content goes here -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+      <!--  Header End -->
+      <div class="container-fluid">
+        <div class="card-body">
+          <div class="row">
+            <div class="card">
+              <section class="py-5">
+                <div class="container px-4 px-lg-5 my-5">
+                  <div class="row gx-4 gx-lg-5 align-items-center">
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="../assets/images/products/s4.jpg"
+                        alt="..." /></div>
+                    <div class="col-md-6">
+                      <div class="d-flex align-items-center gap-2">
+                        <span class="badge bg-success rounded-3 fw-semibold">In Stock</span>
+                        <span class="small">SKU: BST-498</span>
+                      </div>
+                      <h1 class="display-5 fw-bolder">Tai Nghe Supreme Sound-X</h1>
+                      <div class="fs-5 mb-5">
+                        <span class="text-decoration-line-through">$45.00</span>
+                        <span>$40.00</span>
+                      </div>
+
+                      <div class="fs-5 mb-3 d-flex align-items-center">
+                        <p class="fw-bold m-1">RATE:</p>
+                        <ul class="list-unstyled d-flex align-items-center mb-0">
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                        </ul>
+                      </div>
+                      <p class="lead">Với công nghệ Supreme Sound-X tiên tiến, tai nghe mang đến trải nghiệm âm thanh
+                        đẳng cấp, thoải mái và linh hoạt. Kết nối đa dạng, pin sạc siêu bền, điều khiển thông minh giúp
+                        bạn tận hưởng không gian âm nhạc tuyệt vời mọi lúc.</p>
+                      <div class="d-flex">
+                        <span class="input-group-text fw-bold" style="background-color: #fff;border: none;">QTY:</span>
+                        <div class="form-outline me-1" style="width: 70px;">
+                          <input type="number" value="1" class="form-control" id="quantity" />
+                        </div>
+                        <button class="btn btn-primary flex-shrink-0" type="button">
+                          <i class="bi-cart-fill me-1"></i>
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="h-25">
+                  <div class="px-4 px-lg-5 my-3 ">
+                    <!-- Tabs Navigation -->
+                    <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="description-tab" data-bs-toggle="tab" href="#description"
+                          role="tab" aria-controls="description" aria-selected="true">Description</a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="user-rating-tab" data-bs-toggle="tab" href="#user-rating" role="tab"
+                          aria-controls="user-rating" aria-selected="false">User Rating</a>
+                      </li>
+                    </ul>
+
+                    <!-- Tabs Content -->
+                    <div class="tab-content mt-3">
+                      <!-- Description Tab -->
+                      <div class="tab-pane fade show active" id="description" role="tabpanel"
+                        aria-labelledby="description-tab">
+                        <div class="h-25">
+                          <div class="px-4 px-lg-5 my-3">
+                            <p>
+                            <h1 class="text-center mb-4">Tai Nghe Supreme Sound-X</h1>
+
+                            <h5>Đẳng cấp Âm Thanh</h5>
+                            <p>Với công nghệ Supreme Sound-X tiên tiến, tai nghe của chúng tôi mang đến cho bạn trải
+                              nghiệm âm thanh đẳng cấp. Bạn sẽ hòa mình vào không gian âm nhạc sống động, với âm trầm
+                              mạnh mẽ, âm cao trong trẻo và âm trung sáng tạo.</p>
+
+                            <h5>Thiết Kế Ergonomic</h5>
+                            <p>Tai nghe Supreme Sound-X được thiết kế đặc biệt để mang lại sự thoải mái tối đa trong
+                              suốt thời gian sử dụng dài hạn. Được làm từ vật liệu nhẹ và linh hoạt, chúng giúp giảm áp
+                              lực trên tai và đầu, tạo cảm giác thoải mái như không đeo tai nghe.</p>
+
+                            <h5>Kết Nối Linh Hoạt</h5>
+                            <p>Với khả năng kết nối đa dạng, bạn có thể sử dụng tai nghe Supreme Sound-X với mọi thiết
+                              bị âm thanh từ điện thoại di động đến máy tính và các thiết bị giải trí khác. Bluetooth
+                              tiên tiến giúp bạn kết nối nhanh chóng và không gặp sự cố.</p>
+
+                            <h5>Pin Sạc Siêu Bền</h5>
+                            <p>Không còn lo lắng về việc tai nghe hết pin giữa chặng đường. Pin sạc dung lượng cao của
+                              chúng tôi đảm bảo bạn có thể thưởng thức âm nhạc suốt cả ngày mà không cần sạc lại.</p>
+
+                            <h5>Điều Khiển Thông Minh</h5>
+                            <p>Với nút điều khiển thông minh trên tai nghe, bạn có thể dễ dàng thay đổi bài hát, điều
+                              chỉnh âm lượng và thậm chí trả lời cuộc gọi mà không cần lấy điện thoại ra khỏi túi.</p>
+
+                            <h5>Độ Bền Vững Chắc</h5>
+                            <p>Tai nghe Supreme Sound-X được làm từ vật liệu chất lượng cao, giúp chúng tôi đảm bảo độ
+                              bền và độ ổn định của sản phẩm. Bạn có thể tin tưởng sử dụng chúng trong mọi hoàn cảnh.
+                            </p>
+
+                            <h5>Tận Hưởng Sự Hoàn Hảo</h5>
+                            <p>Với Tai Nghe Supreme Sound-X, trải nghiệm âm thanh chưa bao giờ trở nên tuyệt vời đến như
+                              vậy. Hãy đắm chìm trong không gian âm nhạc riêng của bạn với chất âm xuất sắc và thoải mái
+                              tuyệt vời.</p>
+
+                            <p class="text-center mt-4">Hãy trải nghiệm ngay hôm nay và khám phá thế giới âm nhạc mới mẻ
+                              cùng Supreme Sound-X!</p>
+                            </p>
+                            </p>
+                            <!-- Add more description paragraphs as needed -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- User Rating Tab -->
+                      <div class="tab-pane fade" id="user-rating" role="tabpanel" aria-labelledby="user-rating-tab">
+
+                        <div class="card p-3">
+                          <div class="d-flex justify-content-between align-items-center row">
+                            <div class="ratings col-6">
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star"></i>
+                            </div>
+                            <div class="col-6">
+                              <h5 class="review-count">52 Reviews</h5>
+                            </div>
+                          </div>
+
+
+                          <div class="mt-5 d-flex justify-content-between align-items-center row">
+                            <div class="col-6">
+                              <h5 class="review-count">Cleanliness</h5>
+                            </div>
+                            <div class="small-ratings col-6">
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star"></i>
+                              <i class="ti ti-star"></i>
+                            </div>
+
+                          </div>
+
+                          <div class="mt-1 d-flex justify-content-between align-items-center row">
+                            <div class="col-6">
+                              <h5 class="review-count">Quality</h5>
+                            </div>
+                            <div class="small-ratings col-6">
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star"></i>
+                            </div>
+                          </div>
+
+
+                          <div class="mt-1 d-flex justify-content-between align-items-center row">
+                            <div class="col-6">
+                              <h5 class="review-count">durability</h5>
+                            </div>
+                            <div class="small-ratings col-6">
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star"></i>
+                              <i class="ti ti-star"></i>
+                              <i class="ti ti-star"></i>
+                            </div>
+                          </div>
+
+
+                          <div class="mt-1 d-flex justify-content-between align-items-center row">
+                            <div class="col-6">
+                              <h5 class="review-count">User experience</h5>
+                            </div>
+                            <div class="small-ratings col-6">
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                            </div>
+                          </div>
+
+
+                          <div class="mt-1 d-flex justify-content-between align-items-center row">
+                            <div class="col-6">
+                              <h5 class="review-count">meet expectations</h5>
+                            </div>
+                            <div class="small-ratings col-6">
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star text-warning"></i>
+                              <i class="ti ti-star"></i>
+                              <i class="ti ti-star"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          </section>
+          <!-- Related items section-->
+          <section class="py-5 bg-light card">
+            <div class="container px-4 px-lg-5 mt-5">
+              <h2 class="fw-bolder mb-4">Nominated products</h2>
+              <div class="row">
+                <div class="col-sm-6 col-xl-3">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="javascript:void(0)"><img src="../assets/images/products/s4.jpg"
+                          class="card-img-top rounded-0" alt="..."></a>
+                      <a href="javascript:void(0)"
+                        class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3"
+                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i
+                          class="ti ti-basket fs-4"></i></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <h6 class="fw-semibold fs-4">Boat Headphone</h6>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="fw-semibold fs-4 mb-0">$50 <span
+                            class="ms-2 fw-normal text-muted fs-3"><del>$65</del></span></h6>
+                        <ul class="list-unstyled d-flex align-items-center mb-0">
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="../html/detailProduct.html"><img src="../assets/images/products/s5.jpg"
+                          class="card-img-top rounded-0" alt="..."></a>
+                      <a href="javascript:void(0)"
+                        class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3"
+                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i
+                          class="ti ti-basket fs-4"></i></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <a href="../html/detailProduct.html">
+                        <h6 class="fw-semibold fs-4">MacBook Air Pro</h6>
+                      </a>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="fw-semibold fs-4 mb-0">$650 <span
+                            class="ms-2 fw-normal text-muted fs-3"><del>$900</del></span></h6>
+                        <ul class="list-unstyled d-flex align-items-center mb-0">
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="../html/detailProduct.html"><img src="../assets/images/products/s7.jpg"
+                          class="card-img-top rounded-0" alt="..."></a>
+                      <a href="javascript:void(0)"
+                        class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3"
+                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i
+                          class="ti ti-basket fs-4"></i></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <a href="../html/detailProduct.html">
+                        <h6 class="fw-semibold fs-4">Red Valvet Dress</h6>
+                      </a>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="fw-semibold fs-4 mb-0">$150 <span
+                            class="ms-2 fw-normal text-muted fs-3"><del>$200</del></span></h6>
+                        <ul class="list-unstyled d-flex align-items-center mb-0">
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xl-3">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="../html/detailProduct.html"><img src="../assets/images/products/s11.jpg"
+                          class="card-img-top rounded-0" alt="..."></a>
+                      <a href="javascript:void(0)"
+                        class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3"
+                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i
+                          class="ti ti-basket fs-4"></i></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <a href="../html/detailProduct.html">
+                        <h6 class="fw-semibold fs-4">Cute Soft Teddybear</h6>
+                      </a>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="fw-semibold fs-4 mb-0">$285 <span
+                            class="ms-2 fw-normal text-muted fs-3"><del>$345</del></span></h6>
+                        <ul class="list-unstyled d-flex align-items-center mb-0">
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a>
+                          </li>
+                          <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="py-6 px-6 text-center">
+      <p class="mb-0 fs-4">Design and Developed by <a href="https://adminmart.com/" target="_blank"
+          class="pe-1 text-primary text-decoration-underline">AdminMart.com</a></p>
+    </div>
+  </div>
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script src="../assets/js/app.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+</body>
+
+</html>

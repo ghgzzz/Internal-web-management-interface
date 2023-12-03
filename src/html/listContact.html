@@ -1,0 +1,1289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modernize Free</title>
+  <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+</head>
+
+<body>
+  <!--  Body Wrapper -->
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+      <!-- Sidebar scroll-->
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
+        </div>
+        <!-- Sidebar navigation-->
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Home</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Profile</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./addUser.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user-plus"></i>
+                </span>
+                <span class="hide-menu">Add User</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./settingUser.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-settings"></i>
+                </span>
+                <span class="hide-menu">Setting</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./chat-page.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-message"></i>
+                </span>
+                <span class="hide-menu">Chat</span>
+              </a>
+            </li>
+            <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="./detailPost.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-article"></i>
+                </span>
+                <span class="hide-menu">Post</span>
+              </a>
+            </li> -->
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Product</span>
+            </li>
+            <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="./Product.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-archive"></i>
+                </span>
+                <span class="hide-menu">Product</span>
+              </a>
+            </li> -->
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./listProduct.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-align-box-left-bottom"></i>
+                </span>
+                <span class="hide-menu">List product</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./detailProduct.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-clipboard-data"></i>
+                </span>
+                <span class="hide-menu">Detail product</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Contact</span>
+            </li>
+            <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="./contact.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user"></i>
+                </span>
+                <span class="hide-menu">Contact</span>
+              </a>
+            </li> -->
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./listContact.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-address-book"></i>
+                </span>
+                <span class="hide-menu">List Contact</span>
+              </a>
+            </li>
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">AUTH</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-login"></i>
+                </span>
+                <span class="hide-menu">Login</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user-plus"></i>
+                </span>
+                <span class="hide-menu">Register</span>
+              </a>
+            </li>
+          </ul>
+          <div class="unlimited-access hide-menu bg-light-primary position-relative mb-7 mt-5 rounded">
+            <div class="d-flex">
+              <div class="unlimited-access-title me-3">
+                <h6 class="fw-semibold fs-4 mb-6 text-dark w-85">Upgrade to pro</h6>
+                <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/" target="_blank"
+                  class="btn btn-primary fs-2 fw-semibold lh-sm">Buy Pro</a>
+              </div>
+              <div class="unlimited-access-img">
+                <img src="../assets/images/backgrounds/rocket.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item d-block d-xl-none">
+                        <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                            <i class="ti ti-menu-2"></i>
+                        </a>
+                    </li>
+                    <!-- notification  -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-icon-hoverd-flex align-items-center" href="javascript:void(0)" id="drop2"
+                            data-toggle="dropdown" aria-expanded="false" href="javascript:void(0)">
+                            <div class="notification bg-primary rounded-circle"></div>
+                            <i class="ti ti-bell-ringing"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up dropleft p-lg-4"
+                            aria-labelledby="drop2">
+                            <div class="message-body">
+                                <p class="fw-semibold">Notifications</p>
+                                <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                                    <img src="../assets/images/profile/user-2-8a001bcb.jpg" alt="" width="35" height="35"
+                                        class="rounded-circle " alt="Sender Image" class="sender-image">
+                                    <p class="mb-0 fs-3">Roman Joined the Team! Congratulate him</p>
+                                </a>
+                                <!-- ... other notification items ... -->
+                                <a href="javascript:void(0)" class="btn btn-outline-primary mx-3 mt-2 d-block">See all Notification</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- shopping -->
+                <ul class="navbar-nav">
+                    <li class="nav-item d-block d-xl-none">
+                        <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                            <i class="ti ti-menu-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+                            <i class="ti ti-shopping-cart"></i>
+                            <div class="shopping-cart bg-primary rounded-circle"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+                    <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+                      <span class="nav-item username fw-bolder accordion-collapse">
+                        Gia Hung
+                    </span>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                                <div class="message-body">
+                                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                                        <i class="ti ti-user fs-6"></i>
+                                        <p class="mb-0 fs-3">My Profile</p>
+                                    </a>
+                                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                                        <i class="ti ti-mail fs-6"></i>
+                                        <p class="mb-0 fs-3">My Account</p>
+                                    </a>
+                                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                                        <i class="ti ti-list-check fs-6"></i>
+                                        <p class="mb-0 fs-3">My Task</p>
+                                    </a>
+                                    <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Additional content -->
+                        <li class="nav-item">
+                            <!-- Your additional content goes here -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+      <!--  Header End -->
+      <div class="container-fluid">
+
+        <div class="table-responsive card ">
+
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-4">List Contact</h5>
+
+            <div class=" card justify-content-end" style="width: 140px;">
+              <!-- Add Contact Modal -->
+              <div class="modal fade" id="addContactModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Add Contact</h5>
+                      <button type="button" class="close btn btn-close" data-dismiss="modal" aria-label="Close">
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form id="contactForm">
+                        <!-- Your form fields for contact -->
+                        <div class="form-group mt-2">
+                          <label for="contactId">ID:</label>
+                          <input type="text" class="form-control" id="contactId" placeholder="Enter ID">
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="contactUserInfo">UserInfo:</label>
+                          <input type="text" class="form-control" id="contactUserInfo" placeholder="Enter UserInfo">
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="contactPhone">Phone:</label>
+                          <input type="tel" class="form-control" id="contactPhone" placeholder="Enter phone number">
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="contactJoiningDate">Joining Date:</label>
+                          <input type="date" class="form-control" id="contactJoiningDate">
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="contactRole">Role:</label>
+                          <select class="form-control" id="contactRole">
+                            <option>Designer</option>
+                            <option>Developer</option>
+                            <option>Accountant</option>
+                            <option>Chairman</option>
+                          </select>
+                        </div>
+                        <div class="mt-2">
+                          <button type="submit" class="btn btn-primary" id="saveContactBtn">Save</button>
+                          <button type="button" class="btn btn-secondary" id="cancelContactBtn"
+                            data-dismiss="modal">Cancel</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="addContactModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Add Contact</h5>
+                      <button type="button" class="close btn btn-close " data-dismiss="modal" aria-label="Close">
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-groupmt-2">
+                          <label for="contactId">ID:</label>
+                          <input type="text" class="form-control" id="contactId" placeholder="Enter ID">
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="contactUserInfo">UserInfo:</label>
+                          <input type="text" class="form-control" id="contactUserInfo" placeholder="Enter UserInfo">
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="contactPhone">Phone:</label>
+                          <input type="tel" class="form-control" id="contactPhone" placeholder="Enter phone number">
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="contactJoiningDate">Joining Date:</label>
+                          <input type="date" class="form-control" id="contactJoiningDate">
+                        </div>
+                        <div class="form-group mt-2">
+                          <label for="contactRole">Role:</label>
+                          <select class="form-control" id="contactRole">
+                            <option>Designer</option>
+                            <option>Developer</option>
+                            <option>Accountant</option>
+                            <option>Chairman</option>
+                          </select>
+                        </div>
+                        <div class="mt-2">
+                          <button type="submit" class="btn btn-primary">Add</button>
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class="table text-nowrap mb-0 align-middle" id="example">
+              <thead class="text-dark fs-4">
+                <tr>
+                  <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Id</h6>
+                  </th>
+                  <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">UserInfo</h6>
+                  </th>
+                  <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Phone</h6>
+                  </th>
+                  <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Joining Date</h6>
+                  </th>
+                  <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Role</h6>
+                  </th>
+                  <th class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">Actions</h6>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#123</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Hanna Gover</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+123 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">12-10-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-primary rounded-3 fw-semibold">Designer</span>
+                    </div>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#452</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Daniel Kristeen</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+234 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">10-09-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-secondary rounded-3 fw-semibold">Developer</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#565</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Julian Josephs </h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+345 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">01-10-2013</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-danger rounded-3 fw-semibold">Accountant</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#785</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Jan Petrovic</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+456 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">02-10-2017</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-primary rounded-3 fw-semibold"> Designer</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#450 </h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Nicholas Runolfsdottir V</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+234 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">11-10-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-indigo rounded-3 fw-semibold">Chairman</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#452</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Daniel Kristeen</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+234 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">10-09-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-secondary rounded-3 fw-semibold">Developer</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#123</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Hanna Gover</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+123 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">12-10-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-primary rounded-3 fw-semibold">Designer</span>
+                    </div>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#452</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Daniel Kristeen</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+234 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">10-09-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-secondary rounded-3 fw-semibold">Developer</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#565</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Julian Josephs </h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+345 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">01-10-2013</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-danger rounded-3 fw-semibold">Accountant</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#785</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Jan Petrovic</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+456 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">02-10-2017</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-primary rounded-3 fw-semibold"> Designer</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#450 </h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Nicholas Runolfsdottir V</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+234 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">11-10-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-indigo rounded-3 fw-semibold">Chairman</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#452</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Daniel Kristeen</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+234 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">10-09-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-secondary rounded-3 fw-semibold">Developer</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#123</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Hanna Gover</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+123 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">12-10-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-primary rounded-3 fw-semibold">Designer</span>
+                    </div>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#452</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Daniel Kristeen</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+234 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">10-09-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-secondary rounded-3 fw-semibold">Developer</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#565</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Julian Josephs </h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+345 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">01-10-2013</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-danger rounded-3 fw-semibold">Accountant</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#785</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Jan Petrovic</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+456 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">02-10-2017</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-primary rounded-3 fw-semibold"> Designer</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#450 </h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Nicholas Runolfsdottir V</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+234 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">11-10-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-indigo rounded-3 fw-semibold">Chairman</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#452</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Daniel Kristeen</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+234 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">10-09-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-secondary rounded-3 fw-semibold">Developer</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#123</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Hanna Gover</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+123 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">12-10-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-primary rounded-3 fw-semibold">Designer</span>
+                    </div>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#452</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Daniel Kristeen</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+234 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">10-09-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-secondary rounded-3 fw-semibold">Developer</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#565</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Julian Josephs </h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+345 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">01-10-2013</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-danger rounded-3 fw-semibold">Accountant</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#785</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Jan Petrovic</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+456 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">02-10-2017</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-primary rounded-3 fw-semibold"> Designer</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#450 </h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Nicholas Runolfsdottir V</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+234 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">11-10-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-indigo rounded-3 fw-semibold">Chairman</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0">#452</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-1">Daniel Kristeen</h6>
+                    <span class="fw-normal">hgover@gmail.com</span>
+                  </td>
+                  <td class="border-bottom-0">
+                    <p class="mb-0 fw-normal">+234 456 789</p>
+                  </td>
+                  <td class="border-bottom-0">
+                    <h6 class="fw-semibold mb-0 fs-4">10-09-2014</h6>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <span class="badge bg-secondary rounded-3 fw-semibold">Developer</span>
+                    </div>
+                  </td>
+                  </td>
+                  <td class="border-bottom-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <button class="btn btn-light-gray editContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Edit">
+                        <span>
+                          <i class="ti ti-pencil"></i>
+                        </span>
+                      </button>
+                      <button class="btn btn-light-danger deleteContactBtn" type="button" data-bs-toggle="tooltip"
+                        title="Delete">
+                        <span>
+                          <i class="ti ti-trash"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/sidebarmenu.js"></script>
+  <script src="../assets/js/app.min.js"></script>
+  <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- MDB -->
+  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-sC2alV5UodKg5bL6DjkBGr5rWywB4pM6i9kdqoqIvvgFXt3vo4+bfJl9lOG+Ov0m"
+    crossorigin="anonymous"></script>
+  <script src="../assets/js/table.js"></script>
+
+</body>
+
+</html>
