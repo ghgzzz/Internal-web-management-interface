@@ -88,7 +88,7 @@
                 <span class="hide-menu">List User</span>
               </a>
             </li>
-            
+
             <!-- <li class="sidebar-item">
               <a class="sidebar-link" href="./detailPost.html" aria-expanded="false">
                 <span>
@@ -288,259 +288,239 @@
       </header>
       <!--  Header End -->
       <div class="container-fluid">
-        <div class="table-responsive card">
-          <div class="card-body">
-            <h5 class="card-title fw-semibold mb-4">Order List</h5>
-            <table class="table text-nowrap mb-0 align-middle" id="example">
-              <thead class="text-dark fs-4">
-                <tr>
-                  <th class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">ORDER</h6>
-                  </th>
-                  <th class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">DATE</h6>
-                  </th>
-                  <th class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">CUSTOMERS</h6>
-                  </th>
-                  <th class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">PAYMENT</h6>
-                  </th>
-                  <th class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">STATUS</h6>
-                  </th>
-                  <th class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">METHOD</h6>
-                  </th>
-                  <th class="border-bottom-0">
-                    <h6 class="fw-semibold mb-0">ACTIONS</h6>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- Order items go here -->
-                <tr>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1">#6979</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1">Apr 15, 2023, 10:21</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center">
-                      <div>
-                        <p class="fw-bold mb-1 ">Cristine Easom</p>
-                        <p class="text-muted mb-0">ceasomw@theguardian.com</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1 w-px-100 text-warning">Pending</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <span class="fw-bold mb-1  px-2 text-bg-light-info" text-capitalized>READY TO PICKUP </span>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1">mastercard ****2356</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <button class="btn btn-light-gray edit-btn" data-bs-toggle="modal"
-                        data-bs-target="#editOrderModal" data-order="#6979" data-date="Apr 15, 2023, 10:21"
-                        data-customer="Cristine Easom" data-email="ceasomw@theguardian.com" data-payment="Pending"
-                        data-status="DELIVERED" data-method="mastercard ****2356">
-                        <i class="ti ti-pencil"></i>
-                      </button>
-                      <button class="btn btn-light-danger" type="button" data-bs-toggle="tooltip" title="Delete">
-                        <i class="ti ti-trash"></i>
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1">#5859</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1">Apr 17, 2023, 6:43</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center">
-                      <div>
-                        <p class="fw-bold mb-1">Cristine Easom</p>
-                        <p class="text-muted mb-0">fscreechs@army.mil </p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1 w-px-100 text-danger">Failed</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <span class="fw-bold mb-1  px-2 text-bg-light-success" text-capitalized>DELIVERED</span>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1">Paypal ****@gmail.com</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <button class="btn btn-light-gray edit-btn" data-bs-toggle="modal"
-                        data-bs-target="#editOrderModal" data-order="#6979" data-date="Apr 15, 2023, 10:21"
-                        data-customer="Cristine Easom" data-email="ceasomw@theguardian.com" data-payment="Pending"
-                        data-status="DELIVERED" data-method="mastercard ****2356">
-                        <i class="ti ti-pencil"></i>
-                      </button>
-                      <button class="btn btn-light-danger" type="button" data-bs-toggle="tooltip" title="Delete">
-                        <i class="ti ti-trash"></i>
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1">#6624 </p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1">Apr 17, 2023, 8:05</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center">
-                      <div>
-                        <p class="fw-bold mb-1">Pauline Pfaffe</p>
-                        <p class="text-muted mb-0">ppfaffe1i@wikia.com</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1 w-px-100 text-secondary">Cancelled</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <span class="fw-bold mb-1 px-2 text-bg-light-primary" text-capitalized>OUT FOR DELIVERY </span>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1">mastercard ****2077</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <button class="btn btn-light-gray edit-btn" data-bs-toggle="modal"
-                        data-bs-target="#editOrderModal" data-order="#6979" data-date="Apr 15, 2023, 10:21"
-                        data-customer="Cristine Easom" data-email="ceasomw@theguardian.com" data-payment="Pending"
-                        data-status="DELIVERED" data-method="mastercard ****2356">
-                        <i class="ti ti-pencil"></i>
-                      </button>
-                      <button class="btn btn-light-danger" type="button" data-bs-toggle="tooltip" title="Delete">
-                        <i class="ti ti-trash"></i>
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1">#8005</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1">Apr 22, 2023, 3:01</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center">
-                      <div>
-                        <p class="fw-bold mb-1">Maurits Nealey</p>
-                        <p class="text-muted mb-0">mnealeyf@japanpost.jp</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1 w-px-100 text-success">Paid</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <span class="fw-bold mb-1 px-2 text-bg-light-warning" text-capitalized>DISPATCHED</span>
-                  </td>
-                  <td class="border-bottom-0">
-                    <p class="fw-bold mb-1">mastercard ****1555</p>
-                  </td>
-                  <td class="border-bottom-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <button class="btn btn-light-gray edit-btn" data-bs-toggle="modal"
-                        data-bs-target="#editOrderModal" data-order="#6979" data-date="Apr 15, 2023, 10:21"
-                        data-customer="Cristine Easom" data-email="ceasomw@theguardian.com" data-payment="Pending"
-                        data-status="DELIVERED" data-method="mastercard ****2356">
-                        <i class="ti ti-pencil"></i>
-                      </button>
-                      <button class="btn btn-light-danger" type="button" data-bs-toggle="tooltip" title="Delete">
-                        <i class="ti ti-trash"></i>
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <!-- Modal for Adding/Editing Order -->
-          <div class="modal fade" id="editOrderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Edit Order</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-6">
+              <h5>Order #32543
+                <span class="text-bg-light-success me-2 ms-2">PAID </span>
+                <span class="text-bg-light-info me-2 ms-2">READY TO PICKUP</span>
+              </h5>
+              <p>Aug 17, 2023, 5:48 (ET)</p>
+
+              <div class="card">
+                <table class="table table-responsive table-borderless">
+                  <thead>
+                    <tr class="bg-light">
+                      <th scope="col" width="5%"><input class="form-check-input" type="checkbox"></th>
+                      <th scope="col" width="30%">Order details</th>
+                      <th scope="col" width="10%">PRICE</th>
+                      <th scope="col" width="15%">QTY</th>
+                      <th scope="col" class="text-end" width="20%"><span>TOTAL</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Order details row -->
+                    <tr>
+                      <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                      <td class="border-bottom-0">
+                        <div class="d-flex align-items-center">
+                          <div class="ms-0">
+                            <p class="fw-bold mb-1 text-truncate">How Innovation Works</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div>$275</div>
+                      </td>
+                      <td>
+                        <div>1</div>
+                      </td>
+                      <td class="text-end">
+                        <div>$275 <i class="fa fa-ellipsis-h ms-2"></i></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                      <td class="border-bottom-0">
+                        <div class="d-flex align-items-center">
+                          <div class="ms-0">
+                            <p class="fw-bold mb-1 text-truncate">How Innovation Works</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div>$275</div>
+                      </td>
+                      <td>
+                        <div>2</div>
+                      </td>
+                      <td class="text-end">
+                        <div>$550 <i class="fa fa-ellipsis-h ms-2"></i></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><input class="form-check-input" type="checkbox"></th>
+                      <td class="border-bottom-0">
+                        <div class="d-flex align-items-center">
+                          <div class="ms-0">
+                            <p class="fw-bold mb-1 text-truncate">How Innovation Works</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div>$275</div>
+                      </td>
+                      <td>
+                        <div>4</div>
+                      </td>
+                      <td class="text-end">
+                        <div>$1000 <i class="fa fa-ellipsis-h ms-2"></i></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="text-end m-lg-3">
+                  <p>Subtotal: $6398</p>
+                  <p>Discount: $22</p>
+                  <p>Tax: $30</p>
+                  <p>Total: $6450</p>
                 </div>
-                <div class="modal-body">
-                  <form id="editOrderForm" enctype="multipart/form-data">
-                    <!-- Order Number -->
-                    <div class="form-group mt-1">
-                      <label for="editOrderNumber">ORDER:</label>
-                      <input type="text" class="form-control" id="editOrderNumber" placeholder="Enter Order Number">
+              </div>
+
+              <!-- timeline -->
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="fw-bold">Shipping Activity</h2>
+                  <ul class="list-group timeline">
+                    <!-- Order placed -->
+                    <li class="list-group-item">
+                      <div class="timeline-badge bg-primary"><i class="fa fa-shopping-cart"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Order placed (Order ID: #32543)</h4>
+                          <p class="text-muted"><i class="fa fa-clock-o"></i> Tuesday 11:29 AM</p>
+                        </div>
+                        <div class="timeline-body">
+                          Your order has been placed successfully
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- Pick-up -->
+                    <li class="list-group-item">
+                      <div class="timeline-badge bg-primary"><i class="fa fa-truck"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Pick-up</h4>
+                          <p class="text-muted"><i class="fa fa-clock-o"></i> Wednesday 11:29 AM</p>
+                        </div>
+                        <div class="timeline-body">
+                          Pick-up scheduled with courier
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- Dispatched -->
+                    <li class="list-group-item">
+                      <div class="timeline-badge bg-primary"><i class="fa fa-truck"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Dispatched</h4>
+                          <p class="text-muted"><i class="fa fa-clock-o"></i> Thursday 11:29 AM</p>
+                        </div>
+                        <div class="timeline-body">
+                          Item has been picked up by courier
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- Package arrived -->
+                    <li class="list-group-item">
+                      <div class="timeline-badge bg-primary"><i class="fa fa-gift"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Package arrived</h4>
+                          <p class="text-muted"><i class="fa fa-clock-o"></i> Saturday 15:20 AM</p>
+                        </div>
+                        <div class="timeline-body">
+                          Package arrived at an Amazon facility, NY
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- Dispatched for delivery -->
+                    <li class="list-group-item">
+                      <div class="timeline-badge bg-primary"><i class="fa fa-truck"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Dispatched for delivery</h4>
+                          <p class="text-muted"><i class="fa fa-clock-o"></i> Today 14:12 PM</p>
+                        </div>
+                        <div class="timeline-body">
+                          Package has left an Amazon facility, NY
+                        </div>
+                      </div>
+                    </li>
+
+                    <!-- Delivery -->
+                    <li class="list-group-item">
+                      <div class="timeline-badge bg-primary"><i class="fa fa-truck"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Delivery</h4>
+                          <p class="text-muted"><i class="fa fa-clock-o"></i> Package will be delivered by tomorrow</p>
+                        </div>
+                        <div class="timeline-body">
+                          <!-- Additional content for the last event -->
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="fw-bold fw-semibold mb-lg-3">Customer Details</h2>
+                  <div class="d-flex align-items-center m-2">
+                    <img src="../assets/images/products/s1.jpg" alt="" style="width: 45px; height: 45px">
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Violet Mendoza</p>
+                      <p class="text-muted mb-0">ID: #58909</p>
                     </div>
-                    <!-- Order Date -->
-                    <div class="form-group mt-1">
-                      <label for="editOrderDate">DATE:</label>
-                      <input type="text" class="form-control" id="editOrderDate" placeholder="Enter Order Date">
-                    </div>
-                    <!-- Customer Information -->
-                    <div class="form-group mt-1">
-                      <label for="editCustomerName">CUSTOMERS:</label>
-                      <input type="text" class="form-control" id="editCustomerName" placeholder="Enter Customer Name">
-                    </div>
-                    <div class="form-group mt-1">
-                      <label for="editCustomerEmail">CUSTOMER EMAIL:</label>
-                      <input type="text" class="form-control" id="editCustomerEmail" placeholder="Enter Customer Email">
-                    </div>
-                    <!-- Payment Information -->
-                    <div class="form-group mt-1">
-                      <label for="editPaymentStatus">PAYMENT:</label>
-                      <select class="form-control" id="editPaymentStatus">
-                        <option value="Pending">Pending</option>
-                        <option value="Failed">Failed</option>
-                        <option value="Cancelled">Cancelled</option>
-                        <option value="Paid">Paid</option>
-                      </select>
-                    </div>
-                    <!-- Order Status -->
-                    <div class="form-group mt-1">
-                      <label for="editOrderStatus">STATUS:</label>
-                      <select class="form-control" id="editOrderStatus">
-                        <option value="DELIVERED">Delivered</option>
-                        <option value="OUT FOR DELIVERY">Out for Delivery</option>
-                        <option value="DISPATCHED">Dispatched</option>
-                        <option value="READY TO PICKUP">Ready to Pickup</option>
-                      </select>
-                    </div>
-                    <!-- Payment Method -->
-                    <div class="form-group mt-1">
-                      <label for="editPaymentMethod">METHOD:</label>
-                      <input type="text" class="form-control" id="editPaymentMethod" placeholder="Enter Payment Method">
-                    </div>
-                    <!-- Save and Cancel Buttons -->
-                    <div class="mt-2">
-                      <button type="submit" class="btn btn-primary" id="saveEditOrderBtn">Save</button>
-                      <button type="button" class="btn btn-secondary m-lg-1" data-bs-dismiss="modal"
-                        id="cancelEditOrderBtn">Cancel</button>
-                    </div>
-                  </form>
+                  </div>
+
+                  <p>
+                    <span class="text-bg-light-success rounded-circle me-2 fs-4">
+                      <i class="ti ti-truck"></i>
+                    </span>
+                    <span class="font-weight-bold">12 Orders</span>
+                  </p>
+                  <p>Email: Shamus889@yahoo.com</p>
+                  <p>Mobile: +1 (609) 972-22-22</p>
+                </div>
+
+              </div>
+
+
+              <div class="card ">
+                <div class="card-body">
+                  <h4 class="fw-bold fw-semibold mb-lg-3">Shipping Address:</h4>
+                  <p>45 Roker Terrace</p>
+                  <p>Latheronwheel</p>
+                  <p>KW5 8NW, London</p>
+                  <p>UK</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="fw-bold fw-semibold mb-lg-3">Billing Address:</h4>
+                  <p>45 Roker Terrace</p>
+                  <p>Latheronwheel</p>
+                  <p>KW5 8NW, London</p>
+                  <p>UK</p>
+                  <h6 class="fw-bold">Mastercard</h6>
+                  <p>Card Number: ******4291</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
