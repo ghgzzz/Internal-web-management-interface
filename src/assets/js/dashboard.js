@@ -1,211 +1,73 @@
-$(function () {
+document.addEventListener('DOMContentLoaded', function() {
+  initializeChart();
+  initializeTables();
+});
 
-
-  // =====================================
-  // Profit
-  // =====================================
-  var chart = {
-    series: [
-      { name: "Earnings this month:", data: [355, 390, 300, 350, 390, 180, 355, 390] },
-      { name: "Expense this month:", data: [280, 250, 325, 215, 250, 310, 280, 250] },
-    ],
-
-    chart: {
-      type: "bar",
-      height: 345,
-      offsetX: -15,
-      toolbar: { show: true },
-      foreColor: "#adb0bb",
-      fontFamily: 'inherit',
-      sparkline: { enabled: false },
-    },
-
-
-    colors: ["#5D87FF", "#49BEFF"],
-
-
-    plotOptions: {
-      bar: {
-        horizontal: false,
-        columnWidth: "35%",
-        borderRadius: [6],
-        borderRadiusApplication: 'end',
-        borderRadiusWhenStacked: 'all'
+function initializeChart() {
+  var ctx = document.getElementById('salesChart').getContext('2d');
+  var salesChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+          labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+          datasets: [{
+              label: 'Doanh số',
+              data: [10, 20, 12, 40, 50, 30, 43, 50, 30, 45, 50, 30, 45,],
+              backgroundColor: 'rgba(0, 123, 255, 0.5)',
+              borderColor: 'rgba(0, 123, 255, 1)',
+              borderWidth: 1
+          }]
       },
-    },
-    markers: { size: 0 },
-
-    dataLabels: {
-      enabled: false,
-    },
-
-
-    legend: {
-      show: false,
-    },
-
-
-    grid: {
-      borderColor: "rgba(0,0,0,0.1)",
-      strokeDashArray: 3,
-      xaxis: {
-        lines: {
-          show: false,
-        },
-      },
-    },
-
-    xaxis: {
-      type: "category",
-      categories: ["16/08", "17/08", "18/08", "19/08", "20/08", "21/08", "22/08", "23/08"],
-      labels: {
-        style: { cssClass: "grey--text lighten-2--text fill-color" },
-      },
-    },
-
-
-    yaxis: {
-      show: true,
-      min: 0,
-      max: 400,
-      tickAmount: 4,
-      labels: {
-        style: {
-          cssClass: "grey--text lighten-2--text fill-color",
-        },
-      },
-    },
-    stroke: {
-      show: true,
-      width: 3,
-      lineCap: "butt",
-      colors: ["transparent"],
-    },
-
-
-    tooltip: { theme: "light" },
-
-    responsive: [
-      {
-        breakpoint: 600,
-        options: {
-          plotOptions: {
-            bar: {
-              borderRadius: 3,
-            }
-          },
-        }
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
       }
-    ]
+  });
+}
 
+function initializeTables() {
+  // Dữ liệu giả định
+  var salesData = [
+      { month: 'Tháng 1', sales: 100 },
+      { month: 'Tháng 2', sales: 150 },
+      { month: 'Tháng 3', sales: 200 },
+      { month: 'Tháng 4', sales: 250 }
+  ];
 
-  };
+  var inventoryData = [
+      { product: 'Sản phẩm A', quantity: 50 },
+      { product: 'Sản phẩm B', quantity: 75 },
+      { product: 'Sản phẩm C', quantity: 20 }
+  ];
 
-  var chart = new ApexCharts(document.querySelector("#chart"), chart);
-  chart.render();
+  var importExportData = [
+      { month: 'Tháng 1', import: 120, export: 80 },
+      { month: 'Tháng 2', import: 140, export: 90 },
+      { month: 'Tháng 3', import: 160, export: 110 }
+      
+  ];
 
+  fillTable('sales-table', ['Tháng', 'Doanh số'], salesData);
+  fillTable('inventory-table', ['Sản phẩm', 'Số lượng'], inventoryData);
+  fillTable('import-export-table', ['Tháng', 'Nhập', 'Xuất'], importExportData);
+}
 
-  // =====================================
-  // Breakup
-  // =====================================
-  var breakup = {
-    color: "#adb5bd",
-    series: [38, 40, 25],
-    labels: ["2022", "2021", "2020"],
-    chart: {
-      width: 180,
-      type: "donut",
-      fontFamily: "Plus Jakarta Sans', sans-serif",
-      foreColor: "#adb0bb",
-    },
-    plotOptions: {
-      pie: {
-        startAngle: 0,
-        endAngle: 360,
-        donut: {
-          size: '75%',
-        },
-      },
-    },
-    stroke: {
-      show: false,
-    },
-
-    dataLabels: {
-      enabled: false,
-    },
-
-    legend: {
-      show: false,
-    },
-    colors: ["#5D87FF", "#ecf2ff", "#F9F9FD"],
-
-    responsive: [
-      {
-        breakpoint: 991,
-        options: {
-          chart: {
-            width: 150,
-          },
-        },
-      },
-    ],
-    tooltip: {
-      theme: "dark",
-      fillSeriesColor: false,
-    },
-  };
-
-  var chart = new ApexCharts(document.querySelector("#breakup"), breakup);
-  chart.render();
-
-
-
-  // =====================================
-  // Earning
-  // =====================================
-  var earning = {
-    chart: {
-      id: "sparkline3",
-      type: "area",
-      height: 60,
-      sparkline: {
-        enabled: true,
-      },
-      group: "sparklines",
-      fontFamily: "Plus Jakarta Sans', sans-serif",
-      foreColor: "#adb0bb",
-    },
-    series: [
-      {
-        name: "Earnings",
-        color: "#49BEFF",
-        data: [25, 66, 20, 40, 12, 58, 20],
-      },
-    ],
-    stroke: {
-      curve: "smooth",
-      width: 2,
-    },
-    fill: {
-      colors: ["#f3feff"],
-      type: "solid",
-      opacity: 0.05,
-    },
-
-    markers: {
-      size: 0,
-    },
-    tooltip: {
-      theme: "dark",
-      fixed: {
-        enabled: true,
-        position: "right",
-      },
-      x: {
-        show: false,
-      },
-    },
-  };
-  new ApexCharts(document.querySelector("#earning"), earning).render();
-})
+function fillTable(tableId, headers, data) {
+  var table = document.getElementById(tableId);
+  var html = '<thead><tr>';
+  headers.forEach(header => {
+      html += '<th>' + header + '</th>';
+  });
+  html += '</tr></thead><tbody>';
+  data.forEach(row => {
+      html += '<tr>';
+      Object.values(row).forEach(value => {
+          html += '<td>' + value + '</td>';
+      });
+      html += '</tr>';
+  });
+  html += '</tbody>';
+  table.innerHTML = html;
+}

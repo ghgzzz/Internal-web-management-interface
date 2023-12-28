@@ -17232,4 +17232,8 @@ img{ max-width:100%;}
 /* timeline details order */
 
 
-
+img.product-image {
+  width: 50px; /* or any size you prefer */
+  height: auto;
+  margin-right: 10px;
+}
